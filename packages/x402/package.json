@@ -1,0 +1,44 @@
+{
+  "name": "bb84-x402",
+  "version": "0.1.0",
+  "description": "Accept bb84 payments (USDC / EURC on the bb84 chain) in an x402 resource server: scheme bb84-prepaid for the official x402 SDK",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "x402",
+    "bb84",
+    "payments",
+    "usdc",
+    "eurc",
+    "ai-agents",
+    "mcp",
+    "402"
+  ],
+  "homepage": "https://bb84.com/developers#accept-agents",
+  "peerDependencies": {
+    "@x402/core": ">=2.30.0 <3"
+  },
+  "devDependencies": {
+    "@x402/core": "~2.30.0"
+  },
+  "author": "Hadamard Corporation"
+}
