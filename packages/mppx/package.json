@@ -1,6 +1,6 @@
 {
   "name": "bb84-mppx",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Accept bb84 payments (USDC / EURC on the bb84 chain) in a Machine Payments Protocol (MPP) server: payment method \"bb84\" for mppx",
   "license": "MIT",
   "type": "module",
@@ -36,6 +36,14 @@
     "402"
   ],
   "homepage": "https://bb84.com/developers#accept-agents",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysteryxteo/bb84-agent-pay.git",
+    "directory": "packages/mppx"
+  },
+  "bugs": {
+    "url": "https://github.com/mysteryxteo/bb84-agent-pay/issues"
+  },
   "peerDependencies": {
     "mppx": ">=0.18.0 <1"
   },

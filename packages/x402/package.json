@@ -1,6 +1,6 @@
 {
   "name": "bb84-x402",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Accept bb84 payments (USDC / EURC on the bb84 chain) in an x402 resource server: scheme bb84-prepaid for the official x402 SDK",
   "license": "MIT",
   "type": "module",
@@ -34,6 +34,14 @@
     "402"
   ],
   "homepage": "https://bb84.com/developers#accept-agents",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysteryxteo/bb84-agent-pay.git",
+    "directory": "packages/x402"
+  },
+  "bugs": {
+    "url": "https://github.com/mysteryxteo/bb84-agent-pay/issues"
+  },
   "peerDependencies": {
     "@x402/core": ">=2.30.0 <3"
   },

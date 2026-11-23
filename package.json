@@ -2,6 +2,11 @@
   "name": "bb84-agent-pay",
   "private": true,
   "description": "Merchant building blocks for accepting bb84 payments from AI agents (x402 and MPP)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysteryxteo/bb84-agent-pay.git"
+  },
+  "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
