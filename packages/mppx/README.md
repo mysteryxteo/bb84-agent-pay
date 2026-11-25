@@ -29,6 +29,13 @@ app.get("/weather",
 
 You can register `charge()` next to your other methods; mppx then offers all of them in the same 402.
 
+## Who pays
+
+AI assistants pay such endpoints through the **bb84 wallet connector** (remote MCP server
+`https://bb84.com/api/connect/mcp`, tool `pay_and_call`): the assistant calls your URL, the user confirms the price
+in the bb84 app, and the call is repeated with the payment proof. Add the connector in Claude under
+*Settings → Connectors → Add custom connector*, or with `claude mcp add --transport http bb84 https://bb84.com/api/connect/mcp`.
+
 ## How it works
 
 Like the push mode of other chains: the payer broadcasts the payment and presents the transaction hash.

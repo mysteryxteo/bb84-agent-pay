@@ -29,6 +29,13 @@ app.get("/weather", (req, res) => res.json({ report: "sunny" }));
 
 You can list bb84 next to your other networks in the same `accepts` array.
 
+## Who pays
+
+AI assistants pay such endpoints through the **bb84 wallet connector** (remote MCP server
+`https://bb84.com/api/connect/mcp`, tool `pay_and_call`): the assistant calls your URL, the user confirms the price
+in the bb84 app, and the call is repeated with the payment proof. Add the connector in Claude under
+*Settings → Connectors → Add custom connector*, or with `claude mcp add --transport http bb84 https://bb84.com/api/connect/mcp`.
+
 ## How it works
 
 bb84 accounts are hash-chain accounts without ECDSA keys, so a payer cannot sign an authorization for a facilitator

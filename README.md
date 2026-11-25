@@ -14,6 +14,19 @@ On the paying side, the bb84 wallet connector for AI assistants has the tool `pa
 shows your price to the user in the bb84 app and repeats the call with the payment proof.
 Protocol details: <https://bb84.com/developers#accept-agents>.
 
+## Paying with an AI assistant
+
+Any MCP client can pay your server through the bb84 wallet connector (remote MCP server, OAuth):
+
+```
+https://bb84.com/api/connect/mcp
+```
+
+Add it in Claude under *Settings → Connectors → Add custom connector*, or with
+`claude mcp add --transport http bb84 https://bb84.com/api/connect/mcp` in Claude Code. The assistant then pays
+402 responses with `pay_and_call`; the user confirms each price in the bb84 app (or sets an AI budget).
+Guide for assistants: <https://bb84.com/api/connect/docs/wallet.en.md>.
+
 ## Try the examples
 
 ```bash

@@ -1,6 +1,6 @@
 {
   "name": "bb84-x402",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Accept bb84 payments (USDC / EURC on the bb84 chain) in an x402 resource server: scheme bb84-prepaid for the official x402 SDK",
   "license": "MIT",
   "type": "module",

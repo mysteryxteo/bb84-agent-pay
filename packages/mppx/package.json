@@ -1,6 +1,6 @@
 {
   "name": "bb84-mppx",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Accept bb84 payments (USDC / EURC on the bb84 chain) in a Machine Payments Protocol (MPP) server: payment method \"bb84\" for mppx",
   "license": "MIT",
   "type": "module",
